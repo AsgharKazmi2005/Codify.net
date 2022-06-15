@@ -272,16 +272,22 @@ body {
 
 .nav {
     width: 100%;
-    background-color: rgb(251, 144, 72);
+    background-color: rgb(255 195 155 / 50%);
     text-align: center;
     padding-bottom: 5px;
-    height: 10px;
+    height: 40px;
 }
 
-h1 {
+h1{
     margin: 0 auto;
     color:white;
     font-family: Tahoma;
+    text-decoration: none;
+}
+
+#navTitle{
+    color:rgb(135 63 0);
+    text-decoration: none;
 }
 
 .main {
