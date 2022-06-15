@@ -111,6 +111,7 @@
 }
 .sidebar .nav-links li.showMenu .sub-menu{
   display: block;
+  transition: .5s;
 }
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
