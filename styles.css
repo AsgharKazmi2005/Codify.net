@@ -1,0 +1,348 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(221, 221, 221);
+
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(0 88 114);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+h1 {
+    margin: 0 auto;
+    color:white;
+    font-family: Tahoma;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin:auto;
+    background-color: rgb(221, 221, 221);
+}
+.button {
+    display: inline-block;
+    font-size: 25px;
+    font-family: Tahoma;
+    padding: 10px 20px;
+    margin:30px 0px;
+    transition: 0.5s;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.buttonInner {
+    display: inline-block;
+    font-size: 25px;
+    font-family: Tahoma;
+    padding: 10px 70px;
+    margin:15px 0px;
+    transition: 0.5s;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.buttonInner:hover {
+color: white;
+}
+
+.html:hover {
+    background-color: rgb(255, 145, 0);
+    border-color: rgb(115, 55, 3);
+    color: white;
+    padding: 10px 200px;
+}
+
+.htmlAccent {
+    color: rgb(135 63 0);
+}
+
+.css:hover {
+    background-color: rgb(0, 191, 255);
+    border-color: rgb(0, 74, 97);
+    color: white;
+    padding: 10px 200px;
+}
+.cssAccent {
+    color: rgb(0 91 143);
+}
+
+.js:hover {
+    background-color: rgb(236, 255, 90);
+    border-color: rgb(121, 123, 2);
+    color: black;
+    padding: 10px 200px;
+}
+.jsAccent {
+    color: rgb(128 124 7);
+}
+
+.lib:hover {
+    background-color: rgb(230, 49, 49);
+    border-color: rgb(118, 2, 2);
+    color: white;
+    padding: 10px 200px;
+}
+
+.blog:hover {
+    background-color: rgb(114, 255, 71);
+    border-color: rgb(0, 72, 1);
+    color: white;
+    padding: 10px 200px;
+}
+
+.learnHTML {
+    width: 90%;
+    height: 240px;
+    margin: auto;
+    border: 3px solid  rgb(115, 55, 3);
+    background-color: rgb(255, 145, 0);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.learnHTML:hover {
+    width: 95%;
+    height: 260px;
+}
+
+.htmlBorder{
+    height: 90%;
+    margin: auto;
+    border-right: 1px solid #a96914;
+}
+
+.learnCSS {
+    width: 90%;
+    height: 240px;
+    margin: auto;
+    background-color: rgb(0, 191, 255);
+    border: 3px solid rgb(0, 74, 97);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.learnCSS:hover {
+    width: 95%;
+    height: 260px;
+}
+
+.cssBorder{
+    height: 90%;
+    margin: auto;
+    border-right: 1px solid #026c8d;
+}
+
+.learnJS {
+    width: 90%;
+    height: 240px;
+    margin: auto;
+    background-color: rgb(236, 255, 90);
+    border: 3px solid rgb(182, 170, 4);
+    border-radius: 10px;
+    display: flex;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.learnJS:hover {
+    width: 95%;
+    height: 260px;
+}
+
+
+.JSBorder{
+    height: 90%;
+    margin: auto;
+    border-right: 1px solid rgb(181 171 26);
+}
+
+.leftContent {
+    width: 40%;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 100px;
+    font-family: Tahoma;
+    margin: -9px;
+    text-align: center;
+}
+
+.titleComplex {
+    font-size: 80px;
+    font-family: Tahoma;
+    margin: -9px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.supportText {
+    font-size: 22px;
+    font-family: Tahoma;
+    margin: 0;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.rightContent {
+    width: 60%;
+    height: 100%;
+}
+/* LIBRARIES */
+.libraries {
+    width: 90%;
+    height: 255px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    background-image: linear-gradient(to right,rgb(177 134 255),#82e3ff, pink);
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+.libraries:hover {
+    width: 95%;
+    height: 260px;
+}
+
+.bootstrap {
+    height: 90%;
+    width: 30%;
+    display: inline-block;
+    background-color: rgb(177 134 255);
+    border: 2px solid rgb(20, 1, 56) ;
+    border-radius: 10px;
+    transition: .5s;
+    margin-top: 11px;
+
+}
+.bsAccent {
+    color: rgb(126, 61, 136);
+}
+
+.jquery {
+    height: 90%;
+    width: 30%;
+    display: inline-block;
+    background-color: #82e3ff;
+    border: 2px solid #012b37;
+    border-radius: 10px;
+    transition: .5s;
+    margin-top: 11px;
+}
+.jqueryAccent {
+    color: rgb(15, 130, 156);
+}
+
+.sass {
+    height: 90%;
+    width: 30%;
+    margin-top: 11px;
+    display: inline-block;
+    background-color: pink;
+    border: 2px solid rgb(100, 79, 83);
+    border-radius: 10px;
+    transition: .5s;
+}
+.sass:hover, .jquery:hover, .bootstrap:hover {
+    width: 34%;
+    height:92%;
+}
+.sassAccent {
+    color: rgb(89 26 70 / 61%);
+}
+.complex {
+    width: 90%;
+    height: 255px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+
+.complex:hover {
+    width: 95%;
+    height: 260px;
+}
+
+.node {
+    height: 90%;
+display: inline-block;
+width: 24%;
+background-color: rgb(117, 245, 117);
+border: 2px solid rgb(12, 87, 2);
+border-radius: 10px;
+transition: .5s;
+margin-top: 11px;
+}
+.nodeAccent {
+    color: rgb(0, 92, 8);
+}
+
+.express {
+    height: 90%;
+    display: inline-block;
+    width: 24%;
+    background-color: rgb(157 255 223);
+    border: 2px solid rgb(57, 57, 57);
+    border-radius: 10px;
+    transition: .5s; 
+    margin-top: 11px;
+}
+
+.expressAccent {
+    color: rgb(0, 78, 52);;
+}
+
+.react {
+    height: 90%;
+    display: inline-block;
+    width: 24%;
+    background-color: rgb(253, 86, 86);
+    border: 2px solid rgb(87, 2, 2);
+    border-radius: 10px;
+    transition: .5s;
+    margin-top: 11px;
+}
+.reactAccent {
+    color: rgb(79, 0, 0);
+}
+
+.redux {
+    height: 90%;
+display: inline-block;
+width: 24%;
+background-color: rgb(95, 66, 164);
+border: 2px solid rgb(42, 2, 87);
+border-radius: 10px;
+transition: .5s;
+margin-top: 11px;
+}
+
+.reduxAccent {
+    color: rgb(27, 0, 69);
+}
+
+.redux:hover, .react:hover, .node:hover, .express:hover {
+    width: 25%;
+    height: 92%;
+}
