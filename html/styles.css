@@ -1,17 +1,20 @@
 /* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+html{scroll-behavior:smooth}
+
 .sidebar{
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 300px;
   background: #11101d;
   z-index: 100;
   transition: all 0.5s ease;
@@ -94,7 +97,7 @@
   text-decoration: none;
 }
 .sidebar .nav-links li a .link_name{
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   color: #fff;
   transition: all 0.4s ease;
@@ -115,7 +118,7 @@
 }
 .sidebar .nav-links li .sub-menu a{
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
   padding: 5px 0;
   white-space: nowrap;
   opacity: 0.6;
@@ -146,7 +149,7 @@
   display: none;
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
-  font-size: 18px;
+  font-size: 12px;
   opacity: 1;
   display: block;
 }
@@ -197,7 +200,7 @@
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job{
   color: #fff;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -236,7 +239,7 @@
   cursor: pointer;
 }
 .home-section .home-content .text{
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 @media (max-width: 400px) {
@@ -264,15 +267,15 @@
 body {
     width: 100%;
     margin: 0;
-    background-color: rgb(221, 221, 221);
-
+    background-color: rgb(251, 144, 72);
 }
 
 .nav {
     width: 100%;
-    background-color: rgb(0 88 114);
+    background-color: rgb(251, 144, 72);
     text-align: center;
     padding-bottom: 5px;
+    height: 10px;
 }
 
 h1 {
@@ -280,3 +283,64 @@ h1 {
     color:white;
     font-family: Tahoma;
 }
+
+.main {
+    text-align: center;
+    font-size: 100px;
+}
+
+.sub-topic {
+    text-align: center;
+    font-size: 60px;
+}
+
+.image {
+    text-align: center;
+}
+
+.mainDiv {
+    height: 100%;
+    margin-left: 300px;
+}
+
+.htmlAccent {
+    color: rgb(135 63 0);
+}
+
+a, a:visited, a:active{
+    color: rgb(135 63 0);
+}
+
+.content {
+    background-color: rgb(255 195 155 / 50%);
+    width: 850px;
+    margin: auto;
+    padding:10px;
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px 0px;
+    transition: .5s;
+    text-align: justify;
+}
+
+.content:hover {
+    background-color: rgba(255, 226, 206, 0.5);
+}
+
+img {
+    width: 850px;
+    box-shadow: 0px 0px 10px 0px;
+    border: 2px solid sandybrown;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    transition: .5s;
+}
+img:hover {
+    width: 900px;
+}
+
+.toc {
+    background-color: sandybrown;
+}
+

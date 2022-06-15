@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Codify.net</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
     <div class="sidebar">
         <div class="logo-details">
             <i class='bx bxl-html5'></i>
-            <span class="logo_name">Learn HTML</span>
+            <span class="logo_name">Learn HTML5</span>
         </div>
         <ul class="nav-links">
           <li>
@@ -30,14 +31,148 @@
             </div>
             <ul class="sub-menu">
               <li><a class="link_name" href="#">Let's Start!</a></li>
-              <li><a href="#">HTML & CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">PHP & MySQL</a></li>
+              <li><a href="#">Set-up Environment</a></li>
+              <li><a href="#">How HTML Works</a></li>
+              <li><a href="#">HTML Structure</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Basic Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Basic Elements</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">HTML Attributes</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">HTML Attributes</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Input Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Input Elements</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Container Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Container Elements</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
             </ul>
           </li>
     </div>
-<script>let arrow = document.querySelectorAll(".arrow");for (var i = 0; i < arrow.length; i++) {arrow[i].addEventListener("click", (e)=>{let arrowParent = e.target.parentElement.parentElement;arrowParent.classList.toggle("showMenu");});}
+<script>let arrow = document.querySelectorAll(".arrow");for (var i = 0; i < arrow.length; i++) {arrow[i].addEventListener("click", (e)=>{let arrowParent = e.target.parentElement.parentElement;arrowParent.classList.toggle("showMenu");});};</script>
     
 </header>
+    <div class="mainDiv">
+
+        <h2 class="main htmlAccent">Learn HTML</h2>
+        <div class="content">
+            <p>Welcome to the HTML Portal. Here you can find everything you need to learn the basic fundamentals of HTML. HTML stands for Hypertext Markup Language, which may seem like
+                nonsense at first. But really, this HTML powers everything your looking at right now. You know, all those sites like Facebook, YouTube, Twitter, Tiktok, Instagram,
+                rely on HTML to function. Every Facebook Post, Youtube Title, Tweet, Story, Video, Message, almost everthing requires HTML to work. Let's get ready to learn HTML. To do so 
+                we need to Set-up our coding Environment. A 'coding environment' is essentially where you will write your code and execute it. At the moment we will execute our code locally, 
+                we will learn to launch a real site further down the line. Let's get into the Set-up.
+            </p>
+        </div>
+
+
+        <div class="content">
+            <h3 class="sub-topic htmlAccent">VSCode Set-Up</h3>
+            <p>The way you Set-Up will depend on your system. If your device is capable of downloading and running programs, continue reading, if not, <a class="smooth" href="#Replit">click here</a>. To execute our code, 
+               we are going to use VSCode, which is one of the most popular code editors out there. You can download it for macOS, Windows, or Linux <a target="_blank" href="https://code.visualstudio.com/download">here</a>.
+               Before we open VSCode, we are going to create a text file in our PC and name it index.html. 'index.html' is the common name for HTML files and every HTML file you make should be called index.html.
+               The next step is to complete our download and open VSCode. Once opened, click the 'Open File' option and select the index.html file we created earlier. At this point, your VSCode should look something like 
+               this (Your layout may look different):
+            </p>
+        </div>
+        <div class="image">
+            <img src="setup1.PNG">
+        </div>
+        <div class="content">
+            <p>Cool, you have most of your coding environment set-up. But if you look closely, in the bottom right of my screen, it says "Go Live", an option you do not have. Don't worry
+               it is not too complicated. What you want to do it navigate to the extensions section. We can use the CTRL + SHIFT + X shortcut to get there. Once there, we want to search up
+               'live server' in the search bar. We are looking for the extension with a purple icon made by Ritwick Dey, click on the extension and you should have a screen that looks like this:
+            </p>
+        </div>
+        <div class="image">
+            <img src="setup2.PNG">
+        </div>
+        <div class="content">
+            <p>Great, now all we have to do is click install and we are done with our setup. live-server creates a local web server so we can put our code online and actually see it.
+                 You can close the extension tab and return to your index.html file. You should see a 'Go Live' button in the bottom right now. If you click it, you will see a blank 
+                 browser page open up, if so, then you have setup properly, you can now move onto the next section.
+            </p>
+        </div>
+
+
+
+        <div class="content">
+            <h3 id="Replit" class="sub-topic htmlAccent">Repl.it Set-Up</h3>
+            <p>If your device is incapable of download and running programs, don't worry, there are other ways to write our code. We can use <a target="_blank" href="https://replit.com/">Repl.it</a>, which is a website that compiles
+                the important HTML services and allows you to use them without downloading a thing. To set-up, go to Repl.it and sign up. Once you have signed up and reached your dashboard,
+                go to the top left and click the 'Create +' button. You will now see a modal pop-up asking you which template you would like to use. We will be using the HTML, CSS, JS (Auto-Refresh)
+                template. So search up HTML and make sure you click the template with Auto-Refresh because that will make our life easier. Title your Repl anything you want and 'Create Repl'.
+                Your screen should look like so: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="setup3.PNG">
+        </div>
+        <div class="content">
+            <p>Brilliant, you have now set-up Repl for our HTML code. Be aware that Repl is only a minified version and lacks some features that an installation would have. Be sure to download
+                VSCode on another device when you have the chance as VSCode is a professional coding environment. Even professional web designers use VSCode to write their code, but for now, Repl
+                should be more than enough!
+            </p>
+        </div>
+    </div>
 </body>
 </html>
