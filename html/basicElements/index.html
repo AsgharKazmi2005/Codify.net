@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Codify.net</title>
+</head>
+<body>
+<header>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-html5'></i>
+            <span class="logo_name">Learn HTML5</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <div class="iocn-link">
+              <a href="/html">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Let's Start!</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/html">Let's Start!</a></li>
+              <li><a href="/html#setup">Set-up Environment</a></li>
+              <li><a href="/html#howHTMLWorks">How HTML Works</a></li>
+              <li><a href="/html#htmlStructure">HTML Structure</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="/html/basicElements/index.html">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Basic Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="/html/basicElements/index.html">Basic Elements</a></li>
+              <li><a href="#Headings">Headings</a></li>
+              <li><a href="#Paragraphs">Paragraphs</a></li>
+              <li><a href="#Hyperlinks">Hyperlinks</a></li>
+              <li><a href="#Images">Images</a></li>
+              <li><a href="#Lists">Lists</a></li>
+              <li><a href="#Comments">Comments</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">HTML Attributes</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">HTML Attributes</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Input Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Input Elements</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Container Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Container Elements</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+    </div>
+<script>let arrow = document.querySelectorAll(".arrow");for (var i = 0; i < arrow.length; i++) {arrow[i].addEventListener("click", (e)=>{let arrowParent = e.target.parentElement.parentElement;arrowParent.classList.toggle("showMenu");});};</script>
+    
+</header>
+    <div class="mainDiv">
+        <nav class="nav">
+            <h1><a id="navTitle" href="https://asgharkazmi2005.github.io/Codify.net">Codify</a></h1>
+        </nav>
+        <div class="content">
+            <h2 class="main htmlAccent">Basic Elements</h2>
+            <p>On this page you will find all the commonly used basic HTML elements. HTML elements are tags that we can use to display something on a page. There are dozens of elements in HTML and we will learn most of them. Let's start where everyone starts, Headers!
+            </p>
+        </div>
+
+        <div id="Headings" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Headers</h3>
+            <p>HTML Headers are exactly what they sound like, heading. There are six headers in HTML and they all are different sizes. The largest is the &lt;h1&gt;&lt;/h1&gt; header. Next would be the &lt;h2&gt;&lt;/h2&gt;, then the &lt;h3&gt;&lt;/h3&gt;, so on and so forth until
+                the final header element, &lt;h6&gt;&lt;/h6&gt;. These header elements make the text bold as well. To make any text show on our webpage, we can use these elements. For example &lt;h4&gt;Hello World&lt;/h4&gt; will print 'Hello World' on our webpage. Try to write a sentence with every type of header element. Once you
+                are done writing your program, you will need to execute it. On VSCode, save your file and simply hit the "go live" button in the bottom right. For Replit, simply hit the run button at the top. It should look something like this:
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures1.PNG">
+        </div>
+        <div id="Paragraphs" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Paragraphs</h3>
+            <p>The next element we will learn about is the paragraph element. Infact, this paragraph you are reading right now is a paragraph element. A paragraph element looks like this: &lt;p&gt;&lt;/p&gt; but with text in between the tags. It is used to write paragraphs such as the 
+                one you are reading right now or the ones they have in news stories. Let's add a paragraph element below the header elements and see how they compare. As you can see, a paragraph in basic form is around the size of an h4 element and it is not bolded at all. Ofcourse we can 
+                change the size of our paragraph element but we will learn to do that when we get to CSS, for now this is perfect.
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures2.PNG">
+        </div>
+
+        <div id="Hyperlinks" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Hyperlinks</h3>
+            <p>Have you ever seen blue text that links from one site to another, that's a hyperlink! In HTML, we call a hyperlink an anchor element. But there is one difference that an anchor tag has that both the paragraph and headers do not. It requires an attribute. We will learn
+                more about attributes in a later section, but all you need to know now is that they help us use html elements. The syntax for an anchor element is as follows: &lt;a href="www.google.com"&gt;Visit Google!&lt;/a&gt;. The attribute we are using here is the href attribute.
+                href stands for Hypertext Reference. What this means is that it tells the anchor element which website it should link to. It is important to note that you can put anchor tags inside of paragraph and heading tags like so: &lt;p&gt;Make Sure To &lt;a href="www.google.com"&gt;Visit Google!&lt;/a&gt;&lt;/p&gt;.
+                In this example, the 'Visit Google!' text will link to the google website, and the rest of the text will be plain text. Write an anchor tag in your paragraph, you can see mine below, it links to the wikipedia page for unicorns!: 
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="htmlStructures3.PNG">
+        </div>
+
+        <div id="Images" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Images</h3>
+            <p>Images are a very popular element as they can be used to show pictures, much like you have seen in these pages. The syntax for an image tag is as follows: &lt;img src="linkToImage.png"&gt;. That's right, the img tag is self closing and requires a src attribute. 
+                The src attribute stands for source and it tells the img element where the image is actually located so it can find and display it. There are two ways to link an image, Locally, and From the internet (non-local). Let's talk about non-local first as that is going to be
+                compatible with repl and VSCode. What you need to do is go to google and search up any image of your choice, I will be looking for a Unicorn image to match my earlier paragraph. Once you have gone through google images (or any other browser), you want to right click
+                on the image and click 'copy image address'. This 'address' works much like the address of your home. Your address tells people where to find you, in this case, the image address tells the img element where to find the image. Add an image to your project, it should look like so:
+            </p>
+        </div>
+
+        <div class="image">
+            <img src="htmlStructures4.PNG">
+        </div>
+
+        <div class="content">
+            <p>Now my image was HUGE, yours may be smaller or larger than mine, but do know that in the future, we will be able to decide how big we want our images to be and where we want them to be. For now, let's look at the second method. To locally source images, you need a device that can 
+                download files, if your using Repl, you cannot do this method. Okay, First we need to create a folder, name it anything you want. Next, copy your index.html file into the new folder. Then close VSCode and open it again. This time, select the 'Open Folder' Option and choose the folder
+                we just made. Finally, download a picture of your choice from the internet and drag it into that new folder. Now all you have to do is put the name of the file in between the src="" attribute and 
+                you have locally sourced the img element. This method is preferred among web developers because the links are much shorter and you don't have to deal with extremely long links like you do with the other method.
+                Do be aware that attributes are case sensitive, make sure the name of the image file is EXACTLY the same as what you put between the src="" attribute. Here is my example: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures5.PNG">
+        </div>
+
+        <div id="Lists" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Lists</h3>
+            <p>HTML Lists are a useful element we can use when we want to list items. There are two types of list elements, orderded lists (&lt;ol&gt;&lt;/ol&gt;) and unordered lists (&lt;ul&gt;&lt;/ul&gt;). Unordered lists are more commonly used in comparison to ordered lists. The navigation bar on the left side of this screen
+                uses unordered lists. To make a list, we actually have to use the list element (&lt;li&gt;&lt;/li&gt;) and add it inside our ordered or unordered list. Make an unordered list in your html file now, I have included my example below:
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures6.PNG">
+        </div>
+        <div class="content">
+            <p>As you can see, each list item is marked by a dot. However if we want an ordered list with numbers, we can use the ol element. Some uses for this would include ranking items or people. Copy paste your unordered list and make it an ordered list like I have done:
+
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures7.PNG">
+        </div>
+
+        <div id="Comments" class="content">
+            <h3 class="sub-topic htmlAccent">HTML Comments</h3>
+            <p>There is one more critical thing you must know about HTML, comments. Now comments are not an element at all, they are a way of writing inside HTML files without executing the writing. Essentially, HTML comments are like writing notes, they help professional web developers
+                stay organized by adding comments above elements. Also, if you want to stop an element from showing on the webpage, but do not want to delete it because you plan to use it later, you can comment it out. To comment in html, we use '<! -- --> and put text in between. On most html editors,
+                the shortcut CTRL + / will add a comment. Selecting html and then pressing CTRL + / will comment it out. Here are Some examples in play: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="htmlStructures8.PNG">
+        </div>
+        <div class="content">
+            <p> As you can see, the color of the text completely changes and none of the content within the comments show on the webpage. In the first example you can see the comment being used to stop an element from showing. In the second example, it is used to describe an element below it.
+                Comments are seriously important when you are working in a group setting. Most computer science jobs require you to work with a team and if you are reading one of your colleague's code, you are expecting to see comments along with the code so you know what each part of the code does.
+                It is not required if you are working solo but it is seriously a great practice. That being said, we have reached the end of the basic section, let's get into the next section!
+            </p>
+        </div>
+  </div>
+</body>
+</html> 
+

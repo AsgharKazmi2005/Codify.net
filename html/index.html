@@ -26,27 +26,29 @@
             </div>
             <ul class="sub-menu">
               <li><a class="link_name" href="#">Let's Start!</a></li>
-              <li><a href="#">Set-up Environment</a></li>
-              <li><a href="#">How HTML Works</a></li>
-              <li><a href="#">HTML Structure</a></li>
+              <li><a href="#setup">Set-up Environment</a></li>
+              <li><a href="#howHTMLWorks">How HTML Works</a></li>
+              <li><a href="#htmlStructure">HTML Structure</a></li>
             </ul>
           </li>
 
           <li>
             <div class="iocn-link">
-              <a href="#">
+              <a href="/html/basicElements/index.html">
                 <i class='bx bx-chevron-right-circle' ></i>
                 <span class="link_name">Basic Elements</span>
               </a>
               <i class='bx bxs-chevron-down arrow' ></i>
             </div>
             <ul class="sub-menu">
-              <li><a class="link_name" href="#">Basic Elements</a></li>
-              <li><a href="#">Headings</a></li>
-              <li><a href="#">Paragraphs</a></li>
-              <li><a href="#">Hyperlinks</a></li>
-              <li><a href="#">Images</a></li>
-              <li><a href="#">Lists</a></li>
+              <li><a class="link_name" href="/html/basicElements/index.html">Basic Elements</a></li>
+              <li><a href="/html/basicElements/index.html#Headings">Headings</a></li>
+              <li><a href="/html/basicElements/index.html#Paragraphs">Paragraphs</a></li>
+              <li><a href="/html/basicElements/index.html#Hyperlinks">Hyperlinks</a></li>
+              <li><a href="/html/basicElements/index.html#Images">Images</a></li>
+              <li><a href="/html/basicElements/index.html#Lists">Lists</a></li>
+              <li><a href="/html/basicElements/index.html#Comments">Comments</a></li>
+
             </ul>
           </li>
 
@@ -111,8 +113,8 @@
         <nav class="nav">
             <h1><a id="navTitle" href="https://asgharkazmi2005.github.io/Codify.net">Codify</a></h1>
         </nav>
-        <h2 class="main htmlAccent">Learn HTML</h2>
         <div class="content">
+            <h2 class="main htmlAccent">Learn HTML</h2>
             <p>Welcome to the HTML Portal. Here you can find everything you need to learn the basic fundamentals of HTML. HTML stands for Hypertext Markup Language, which may seem like
                 nonsense at first. But really, this HTML powers everything your looking at right now. You know, all those sites like Facebook, YouTube, Twitter, Tiktok, Instagram,
                 rely on HTML to function. Every Facebook Post, Youtube Title, Tweet, Story, Video, Message, almost everthing requires HTML to work. Let's get ready to learn HTML. To do so 
@@ -122,7 +124,7 @@
         </div>
 
 
-        <div class="content">
+        <div id="setup" class="content">
             <h3 class="sub-topic htmlAccent">VSCode Set-Up</h3>
             <p>The way you Set-Up will depend on your system. If your device is capable of downloading and running programs, continue reading, if not, <a class="smooth" href="#Replit">click here</a>. To execute our code, 
                we are going to use VSCode, which is one of the most popular code editors out there. You can download it for macOS, Windows, or Linux <a target="_blank" href="https://code.visualstudio.com/download">here</a>.
@@ -170,6 +172,58 @@
                 should be more than enough!
             </p>
         </div>
+
+
+
+
+      <div id="howHTMLWorks" class="content">
+          <h3 class="sub-topic htmlAccent">How HTML Works</h3>
+          <p>HTML is a language the utilizes pre-coded elements to display information. Usually, elements are formatted with a less than sign, followed by the element name, followed by a greater than sign,
+            followed by optional text, followed by a less than sign, followed by a slash, followed by the element name again and finally ending with a greater than sign. Complicated huh? Not really.
+            Do not be intimidated by this, you will see in future lessons that this is much easier than it seems. Heck, let's see an example of it in play right now! Right click anywhere on this screen and 
+            then select 'inspect'. You should see a window like this:
+          </p>
+      </div>
+      <div class="image">
+        <img src="html1.PNG">
+      </div>
+
+      <div class="content">
+        <p>This is the DevTools console. Right now, don't worry about all the tabs at the top, the console at the bottom and the stuff on the right (That's CSS!). What we want to be looking at is 
+          that beautiful blue and orange code on the left, That's HTML! You may not understand a lot of what you see, but you can see the elements we were talking about earlier. We can see the 
+          html element, the head element, a body element, many div elements (yes you can have multiple of the same element!) among other elements. Again don't be overwhelmed, we will go over every element
+          and you will be able to read this code like a book soon!
+        </p>
     </div>
+
+
+    <div id="htmlStructure" class="content">
+      <h3 class="sub-topic htmlAccent">HTML Structure</h3>
+      <p>If your using VSCode, in your file, type html:5 and press enter. If your using Repl.it, you should already have the HTML structure on your screen. Now, you don't need to memorize this, but we are 
+        going to dissect it. First at the top you see &lt;!DOCTYPE html&gt;. It literally means document type. What this does is that it tells the browser, in my case Google Chrome, to render the text as HTML. Nowadays browsers
+        can sense what language you are using but it is a safe practice to always include the document type at the top.  
+      </p>
+  </div>
+  <div class="content">
+    <p>Next we have the &lt;html&gt;&lt;/html&gt; tag. It is where we are going to put all our html. As a rule of thumb, you should never have anything except the Doctype outside of your html tag. Your HTML file should always
+      end in an html tag.
+    </p>
+  </div>
+  <div class="content">
+    <p>Next we have the &lt;head&gt;&lt;/head&gt; tag. If you have ever taken an english test with articles, the head tag is the blurb
+      at the beginning with all the information about the passage. It contains all the information of our web page. It is really important to note that the head tag never displays anything.
+      You might see the &lt;meta charset="UTF-8"&gt; and be confused, dont worry, it only looks complicated. What it does is tell the webpage "Hey browser, this page uses a collection of over 1.1 Million
+      different characters". Essentially it makes it so all these different languages work: Здравствуй, 
+      hæ, හායි, こんにちは,你好. The meta tag itself stands for metadata, which is basically background information. It is something that almost every site has so always include it. Next is the &lt;meta name="viewport" content="width=device-width"&gt;. 
+      Again, it looks quite complicated but all it does is that it makes it so your site fits on all screens including phones and tablets. Do note that meta tags are self-closing, meaning that they dont require a second tag to close it off. There are 
+      many self closing tags, you will learn more about them in the future. Next is the &lt;title&gt;Website Name&lt;/title&gt; tag. This is the name that will show in the browser tab at the top of the page, pretty easy. Everything else you may see in the 
+      head is not required yet so you may delete it if you like.
+  </div>
+
+  <div class="content">
+    <p>Next is the &lt;body&gt;&lt;/body&gt; tag. If the head tag is the blurb, then the body tag is the whole passage. Here is where the actual work goes and where you will be spending a lot of your time when coding html. If there is anything within your body tag
+      delete it all now because we are going to fill it up in the <a href="/html/basicElements/index.html">next section</a>. Let's understand some of the basic elements. 
+  </div>
 </body>
 </html> 
+
