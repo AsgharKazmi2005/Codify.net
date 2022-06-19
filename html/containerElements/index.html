@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Codify.net</title>
+</head>
+<body>
+<header>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-html5'></i>
+            <span class="logo_name">Learn HTML5</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Let's Start!</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://asgharkazmi2005.github.io/Codify.net/html">Let's Start!</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#setup">Set-up Environment</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#howHTMLWorks">How HTML Works</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#htmlStructure">HTML Structure</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Basic Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Headings">Headings</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Paragraphs">Paragraphs</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Hyperlinks">Hyperlinks</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Images">Images</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Lists">Lists</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Comments">Comments</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Container Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements">Container Elements</a></li>
+              <li><a href="#Divs">Divs</a></li>
+              <li><a href="#HeadersAndFooters">Headers & Footers</a></li>
+              <li><a href="#SectionsArticlesAside">Sections, Articles & Asides</a></li>
+              <li><a href="#Nav">Navs</a></li>
+              <li><a href="#Main">Main</a></li>
+              <li><a href="#Figures">Figures</a></li>
+              <li><a href="#Spans">Spans</a></li>
+              <li><a href="#HR">The HR Element</a></li>
+              <li><a href="#Forms">Forms</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="#">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">HTML Forms</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">HTML Forms</a></li>
+              <li><a href="#">Headings</a></li>
+              <li><a href="#">Paragraphs</a></li>
+              <li><a href="#">Hyperlinks</a></li>
+              <li><a href="#">Images</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+
+    </div>
+<script>let arrow = document.querySelectorAll(".arrow");for (var i = 0; i < arrow.length; i++) {arrow[i].addEventListener("click", (e)=>{let arrowParent = e.target.parentElement.parentElement;arrowParent.classList.toggle("showMenu");});};</script>
+    
+</header>
+    <div class="mainDiv">
+        <nav class="nav">
+            <h1><a id="navTitle" href="https://asgharkazmi2005.github.io/Codify.net">Codify</a></h1>
+        </nav>
+        <div class="content">
+            <h2 class="main htmlAccent">Container Elements</h2>
+            <p>Container Elements are a concept that I wish I had learned earlier in my career, but they were not taught to me in a sensible way, like I will teach you. These elements belong together in their own unit because they all do a similar job, so instead of scattering them around, here are all of them 
+                at once. Container Elements do not show any content themselves. Their job is to act as a container for elements that do show content like headers, images and paragraphs. They are critical to the html language because without them our webpages would be messy, frustrating and inconsistant. The format for container
+                elements are the same as normal elements and container element are NEVER self closing. As a good rule of thumb, every HTML element should be inside of a container element, so it is important to know what container elements are and how to use them. Let's get into learning about them.
+            </p>
+        </div>
+
+        <div id="Divs" class="content">
+            <h3 class="sub-topic htmlAccent">Divs</h3>
+            <p>Divs are the most popular container elements. Short for divisions, they are the general multi-purpose container element that you will be using most of the time. If you are not sure which of the container elements to use, chances are a div will do the job, that is how multi-purpose 
+                they are. Using CSS we can change the size and location of divs, but for now, the divs we make will simply wrap around the elements inside it. Let's see an example: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers1.PNG">
+        </div>
+        <div class="content">
+        <p>As you can see, there are two divs above. I have added borders using CSS so you can see them better (You will learn to make borders soon don't worry). As you can see, the divs wrap around the elements that they contain and they help us seperate content from other content so 
+            our webpages can be organized. One more thing before we move onto the next element, oftentimes, divs are put inside of divs. For example If the two divs in the above picture were related, we could put them both inside of another div so we keep them together. We will see more of this later.
+        </p>
+        </div>
+        <div id="HeadersAndFooters" class="content">
+            <h3 class="sub-topic htmlAccent">Headers & Footers</h3>
+            <p> Similar to headers and footers on a word document, headers and footers in html are the containers we will use for the top and bottom of our webpage. It is good practice to start your website with a header element and end it with a footer element. The syntax's are as follows:
+                &lt;header&gt;&lt;/header&gt; and &lt;footer&gt;&lt;/footer&gt;. Functionally, they work the same as a div, but they help us know which div is at the top and which div is at the bottom. This is called a semantic element, meaning that the name of the element describes what it is. 
+                A div is not a semantic element because as a reader, we have no clue what the div contains. However, if we see a header or footer element, we can made a good inference as to what they contain just from the name alone. You should always use a semantic element over a non-semantic element whenever you can 
+                because it makes your code easier to read. Let's add headers and footers to our code:
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers2.PNG">
+        </div>
+        <div class="content">
+            <p>On your site of course, you will not see the borders of the containers, again, just know that the borders are there for now. It may not look pretty, but our page is very well organized and you can tell which container element is what just by looking at our code. Again, using CSS we will make this web page look much better, but for now, this basic structure is fine. As you can see, the header element is used 
+                for putting the website name and navigation. Headers commonly include login links, registration links and search bars among other links in their headers. Footers are used for content that isnt essential for user experience like policies and documentation. Footers commonly include Terms of Service notices, Privacy Policy notices, Cookies notices, DMCA (Copyright) notices, social media links, links to use the 
+                website in other languages, about us pages and other pages that should not be at the top of the page. All in all, headers and footers are incredibly useful and we must use them on your web pages.
+            </p>
+        </div>
+
+        <div id="SectionsArticlesAside" class="content">
+            <h3 class="sub-topic htmlAccent">Sections, Articles & Aside</h3>
+            <p>Sections, Articles and Asides all fall into a similar boat when it comes to semantic elements. They all define parts of the site that are not the main focus, but nonetheless part of the page. Sections are more general and can be placed anywhere on the page so long as they
+                are not the central focus. Articles are much like sections and they should not be the main part of a page. Asides are elements that are strictly on either side of the page. Of course you could use these elements in places they should not be, but this is a terrible practice 
+                and it will confuse people who read your code. The syntax's for these are &lt;section&gt;&lt;/section&gt;, &lt;article&gt;&lt;/article&gt;, and &lt;aside&gt;&lt;/aside&gt;. Here are examples of how to use these elements:
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers3.PNG">
+        </div>
+        <div class="content">
+        <p>As you can see, I have turned our divs into sections and articles. In this instance, it is probably recommended to use divs, but if the content inside was an article or a subset of information, an article or section would be better to use. You can also see the aside element 
+            sticking to the left side. If you write the code I wrote, the aside element will not be on the side, this is because you need to use CSS to make it stick to either side, which you will learn in the CSS section of the course. Let's get into the next element, mains!
+        </p>
+        </div>
+
+        <div id="Nav" class="content">
+            <h3 class="sub-topic htmlAccent">Navs</h3>
+            <p>Navs, short for navigation, are the elements that we put our navigation bar inside. The bar at the top of most websites is called a navigation bar and is contained in a nav element. The syntax is &lt;nav&gt;&lt;/nav&gt; and here is a simple example: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers9.PNG">
+        </div>
+        <div class="content">
+        <p>As you can see in the image above, oftentimes the nav element can be found inside of the header element. sometimes the navbar element replaces the header element and sometimes the header element replaces the nav element. To avoid confusion, you should put your nav element inside 
+            of the header element. Also our navigation bar at the moment looks plain, we will learn to create a professional navigation bar when we get to CSS.
+        </p>
+        </div>
+
+        <div id="Main" class="content">
+            <h3 class="sub-topic htmlAccent">Mains</h3>
+            <p>Mains are the element we use when we are structuring the main part of the page. Every page usually has a single main element which is intended to be the central focus of the page. For example, on our homepage, the courses are the main content so we would put them in between
+                &lt;main&gt;&lt;/main&gt; tags. On youtube or twitch, the video would be the main. It is not necessary to include sections, asides or articles but it is recommended that you have a main, regardless of what your website is. Oftentimes, the main element will include several
+                divs, sections, and articles. Here is an acceptable use of the main tag:
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers4.PNG">
+        </div>
+        <div class="content">
+        <p>Now in reality, nothing has really changed with the site itself. This is because at the moment we only have the main. If we had other elements on the sides, our code would be confusing to read because we would not know what the main point of the page is. By use the main element 
+            we can highlight the main part of the page and make our code much easier to read. Let's spice our page up with images!
+        </p>
+        </div>
+
+        <div id="Figures" class="content">
+            <h3 class="sub-topic htmlAccent">Figures</h3>
+            <p>Figures are, as the name states, figures. Let's say we have a graph that has data to support our article, we would need to use a figure in this circumstance. Using the figure element (&lt;figure&gt;&lt;/figure&gt;) lets us know that it contains an image. Another perk of the figure element is the 
+                optional figcaption (&lt;figcaption&gt;&lt;/figcaption&gt;) element which allows us to add a small description to an image. Let's add a figure to our site and use a figcaption. My example is below: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers5.PNG">
+        </div>
+        <div class="content">
+        <p>As you can see, The Figure element contains the image and the caption. Do note, the figure element automatically centers itself on the page, but if we need to change this we can (using css). The figcaption starts from the left side of the image and contains a description 
+            of the image. Often you will see citations under images, those are figcaptions. Let's get to the next element now, spans!
+        </p>
+        </div>
+
+        <div id="Spans" class="content">
+            <h3 class="sub-topic htmlAccent">Spans</h3>
+            <p>Spans are another commonly used element. Usually, spans are used for containing text. They are much like divs, infact the only difference is that divs take up the whole line whereas spans only take-up as much space as they need. In technical terms, a div is a block element 
+                (meaning it takes up the whole line) and spans are inline elements (they take up as much space as they need and no more). Be aware that we can switch between inline and block using css. Here is an example of using the &lt;span&gt;&lt;/span&gt; element:
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers6.PNG">
+        </div>
+        <div class="content">
+        <p>As you can see, borders do not work on spans. Also, you may notice that each span element only includes a single line of text. It is recommended to use as little text as possible when using spans. Additionally, most of the time, we will use these spans inside of other divs. Let's move onto 
+            the only element on this page that displays anything, and you will see why it is on this page.
+        </p>
+        </div>
+
+        <div id="HR" class="content">
+            <h3 class="sub-topic htmlAccent">Hrs</h3>
+            <p>To be honest, the side we made looks quite ugly with the borders all the way around the element. Luckily, HTML has a built in command we can use to seperate containers. The self-closing hr element (&lt;hr&gt;) creates a slim bar under and element and we can use this to organize 
+                our site without even using css. It stands for 'horizontal rule' which simply means horizontal line. Here is an example of it in play: 
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers7.PNG">
+        </div>
+        <div class="content">
+        <p>Oh my word, that looks much better. As you can see it creates clean borders between our element and make everything look much more organized. We can create custom borders using css, but who needs them when we have the hr element. Regardless, let's move onto the final 
+            container element, which will be the star of our next unit.
+        </p>
+        </div>
+
+        <div id="Forms" class="content">
+            <h3 class="sub-topic htmlAccent">Forms</h3>
+            <p>Have you ever signed up or logged into a website? The div that you are using when you do so is called a form element. Inside of a form element you can find many other elements including radio buttons, checkboxes, textboxes for entering passwords, emails and other information,
+               and submit buttons among other elements. They are extremely important so they require their own unit. You can see an example of one below, do not worry if you do not understand any of the code, you will learn it in the next unit.
+            </p>
+        </div>
+        <div class="image">
+            <img src="containers8.PNG">
+        </div>
+        <div class="content">
+        <p>That brings us to the end of the most used container elements. Remember to only use the elements in appropriate areas. Also remember that if you can use a semantic element instead of a div or a span, you should use it. Now let's learn to create forms in HTML. Of course we will 
+            not be able to log in as we have no JavaScript set-up (we will learn to in the future), but let's learn about the form elements nonetheless.
+        </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
