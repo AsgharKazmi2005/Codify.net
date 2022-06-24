@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Codify.net</title>
+</head>
+<body>
+<header>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxl-html5'></i>
+            <span class="logo_name">Learn HTML5</span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Let's Start!</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://asgharkazmi2005.github.io/Codify.net/html">Let's Start!</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#setup">Set-up Environment</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#howHTMLWorks">How HTML Works</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html#htmlStructure">HTML Structure</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Basic Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Headings">Headings</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Paragraphs">Paragraphs</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Hyperlinks">Hyperlinks</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Images">Images</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Lists">Lists</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/basicElements/#Comments">Comments</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">Container Elements</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements">Container Elements</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Divs">Divs</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#HeadersAndFooters">Headers & Footers</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#SectionsArticlesAside">Sections, Articles & Asides</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Nav">Navs</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Main">Main</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Figures">Figures</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Spans">Spans</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#HR">The HR Element</a></li>
+              <li><a href="https://asgharkazmi2005.github.io/Codify.net/html/containerElements/#Forms">Forms</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="iocn-link">
+              <a href="https://asgharkazmi2005.github.io/Codify.net/html/forms/">
+                <i class='bx bx-chevron-right-circle' ></i>
+                <span class="link_name">HTML Forms</span>
+              </a>
+              <i class='bx bxs-chevron-down arrow' ></i>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="https://asgharkazmi2005.github.io/Codify.net/html/forms/">HTML Forms</a></li>
+              <li><a href="#Forms">Form Element</a></li>
+              <li><a href="#Labels">Label Element</a></li>
+              <li><a href="#Input">Input Element</a></li>
+              <li><a href="#FieldsetLegends">Fieldset Element</a></li>
+              <li><a href="#SelectOptions">Select Element</a></li>
+              <li><a href="#Textareas">Textarea Element</a></li>
+              <li><a href="#Datalists">Datalist Element</a></li>
+              <li><a href="#FormAttributes">Form Attributes</a></li>
+
+            </ul>
+          </li>
+
+    </div>
+<script>let arrow = document.querySelectorAll(".arrow");for (var i = 0; i < arrow.length; i++) {arrow[i].addEventListener("click", (e)=>{let arrowParent = e.target.parentElement.parentElement;arrowParent.classList.toggle("showMenu");});};</script>
+</header>
+
+  <div class="mainDiv">
+    <nav class="nav">
+      <h1><a id="navTitle" href="https://asgharkazmi2005.github.io/Codify.net">Codify</a></h1>
+    </nav>
+
+
+
+
+
+<div class="content">
+  <h2 class="main htmlAccent">HTML Forms</h2>
+  <p>HTML Forms are an integral part of modern webpages. Whether it is simply submitting a search or signing in to a site, form are completely necessary. The difficult part is that HTML forms come with many elements and attributes so it can be difficult to learn. On this page you will find most of the elements along with the optional attribute parameters. This is a difficult section so we will take it one element at a time. Let's begin with the form container element.</p>
+</div>
+
+
+<div id="Forms" class="content">
+  <h3 class="sub-topic htmlAccent">Form Element</h3>
+  <p>As we talked about briefly in the previous section, Form elements are the containers that we are going to use for all our forms. To begin we are simply going to create the form element, at this point nothing should show on your screen as we have not added any visual elements. When we create forms, we have to assign an action attibute. Essentially what it does is once the form is complete and the user hits submit, the data is sent to the specified action URL where it is processed. We will learn to do this way later on in the node.js course. For now we will not specify an action attribute to our form as we are simply learning the elements.</p>
+</div>
+
+
+<div id="Labels" class="content">
+  <h2 class="sub-topic htmlAccent">Label Element</h2>
+  <p>Before we make input elements, we need to label them using the label element. Oftentimes you will see an input element paired with a label element. Below is an example of the label element. Notice the 'for = 'fname' attribute. In the next step we will add an input that will allow us to enter our first name, so when we create our labels, it is important to use the 'for' attribute to tell us which input the label is for. This may seem confusing, don't worry, it will be clarified in the next step.</p>
+</div>
+<div class="image">
+  <img src="form1.PNG">
+</div>
+        
+<div id="Input" class="content">
+  <h3 class="sub-topic htmlAccent">Input Element</h3>
+  <p>Here comes the next attribute, the type attribute. There isn't a seperate element for a checkbox and text field, every input uses the same &lt;input&gt;&lt;/input&gt;. An input element is an element that takes user input. The most common input is the text input. We can use it for submitting passwords, emails, phone numbers, search queries and much more! To use it, we need to specify the 'type' attribute on our input element like so: &lt;input type="text"&gt;&lt;/input&gt;.Let's see the type='text' element in play:</p>
+</div>
+<div class="image">
+  <img src="form2.PNG">
+</div>
+<div class="content">
+  <p>Now in the example above there are many attributes, allow me to explain. We already talked about the 'for' and 'type' attributes, so we know what they do. Next, the 'name' attribute simply gives a name to the element. It is a good practice to add the name attribute to every visual element, even elements like h1 and p which we have already covered. It helps avoid confusion. The ID element is manditory. It lets us target the element in CSS and Javascript and it helps link the label to the input. The 'for' attribute that we talked about earlier should be the same as the 'id' attribute of the element it is for. For instance, in the example above, the 'id' of the input element is 'fname'. If we want to add a label to that input element, we must set the 'for' value to 'fname' as well. To test yourself, create a Last Name input with an 'id' of 'lname'.</p>
+</div>
+
+<div id="EmailPassword" class="content">
+  <h3 class="sub-topic htmlAccent">Email & Password Input Types</h3>
+  <p>Email and password are two commonly used together inputs so I have grouped them together. Both of them are similar to the text input but they have some extra features. When we set our input type to type="email", it will make it so the text box will check if the email is in email format (example@example.com). If it is not, the form will not submit. The type="password" attribute is unique because it hides the characters you enter. Both of these are often used in conjuction with one another. See the example below: </p>
+</div>
+<div class="image">
+  <img src="form3.PNG">
+</div>
+<div class="content">
+  <p>Before we continue, notice that I have used CSS in the example above to align the elements to the left. By nature, inputs and labels are inline elements, meaning they do not take up the whole line. If you write the same code as I wrote above, all your elements will be smooshed togetherin one line. For now, comment out the elements as we learn them, in the CSS portion of the course, we will learn to style forms. However, there is a way for you to achieve the same result using a new HTML element, keep reading.</p>
+</div>
+
+<div id="BR" class="content">
+  <h3 class="sub-topic htmlAccent">BR Element</h3>
+  <p>The Br element stands for break, specifically a line break. Essentialy, when we put it next to an HTML element, that element will become a block element instead of an inline. This means all our inputs wont squish together into one line. Put a line break (&lt;br&gt;) at the end of every one of your inputs. Remember that the br element is self closing. Your code should look like so: </p>
+</div>
+<div class="image">
+  <img src="form8.PNG">
+</div>
+<div class="content">
+  <p>In the next few examples I will not be using the br element because CSS is more practical, but you should be using it to get some practice in. Let's move onto the next set of input elements, time!</p>
+</div>
+
+<div id="Time" class="content">
+  <h3 class="sub-topic htmlAccent">Time & Date Input Types</h3>
+  <p>Whether it be birthdays or the end of your lease, time and date are critical to some forms. Luckily, HTML has many built in input types for time, all of which are shown below. They are ordered from most common to least common so in most cases you will be using the one at the top:</p>
+</div>
+<div class="image">
+  <img src="form4.PNG">
+</div>
+<div class="content">
+<p>In the image above, the attributes we use are the same as the ones we used for emails and passwords, we just changed the type="" attribute and the names of the rest. In HTML, we have 5 options to input time. We have type="date", which simply allows the user to enter the date. We have type="time" which allows the user to enter the time. We have type="datetime-local" which is both the date and the time in one input. Then we have the less commonly used type="month" and type="week" which allow the user to select the month or week. In most cases you will be using the date input but it is good to know the others if you ever need them.</p>
+</div>
+
+<div id="SubmitReset" class="content">
+  <h3 class="sub-topic htmlAccent">Submit & Reset Input Types</h3>
+  <p>The submit and reset input types are found in most forms. The submit input type simply takes all the data inputted into the form and sends it to a form handler (a form handler is a backend file, we will learn to make a form handler much later). The reset input type clears all the inputs and sets them to default. Both of them are not too complicated and they DO NOT require a label element as the button is already labeled. Additionally both submit and reset input types are inline but can be changed using CSS. See the example below: </p>
+</div>
+<div class="image">
+  <img src="form5.PNG">
+</div>
+<div class="content">
+  <p>Now lets test our buttons! The submit button should reload the page and clear the form data. The reset button should simply clear the form data without reloading. You also might notice our buttons look ugly. Don't worry, we will make everything look amazing using CSS later in the course.</p>
+</div>
+
+<div id="File" class="content">
+  <h3 class="sub-topic htmlAccent">File Input Type</h3>
+   <p>The file input type (type="file") is another common input type that you may have seen on the internet. It is used to allow the user to browse their PC for a file and submit that file to the website. This can be useful to send photos of certificates, notices, signatures, forms, licenses and cards. Not all forms require them, but if your site requires proof of age for example, asking your users to submit their ID is a good way to verify proof of age. On page load, it says 'no file chosen' and once you select a file, it will display the file name. A simple example is shown below: </p>
+ </div>
+<div class="image">
+  <img src="form6.PNG">
+</div>
+
+       <div id="Color" class="content">
+        <h3 class="sub-topic htmlAccent">Color Input Type</h3>
+        <p>The color input type (type"color") is very uncommon, but it is good to know nonetheless. What it does is allow the user to select a color of their choice. For most forms, the color input is useless, but let's assume that you are a online paint supplier, all of a sudden the color input type 
+          becomes a neccessity. Also note that HTML uses RGB for their color selection meaning that you can choose any color you can think of.TA simple example is shown below: 
+        </p>
+       </div>
+       <div class="image">
+       <img src="form7.PNG">
+       </div>
+
+       <div id="Checkboxes" class="content">
+        <h3 class="sub-topic htmlAccent">Checkbox Input Type</h3>
+        <p>Checkboxes are another commonly used input type (type="checkbox"). They are especially useful for letting the user decide whether or not they want/agree to/have something. They are commonly used to make users accept terms of service and privacy policy as well as allowing the user to
+          decide whether or not they want to sign up for a newsletter. They can also be used in select all that apply scenarios. Keep in mind that with checkboxes, the input element should become before the label element and there should not be a line break on the input element. Here is an example below:
+        </p>
+       </div>
+       <div class="image">
+       <img src="form9.PNG">
+       </div>
+
+      <div id="Radio" class="content">
+        <h3 class="sub-topic htmlAccent">Radio Input Type</h3>
+        <p>Radio buttons (type="radio") are similar to checkboxes but there is one huge different. We use radio buttons only when we want our user to click one option. An example where we would use this is if we were building a multiple choice exam or asking for user gender. Before we can 
+          use radio buttons, we have to link them together so only one button can be click at at any given time. Essentially we have to make it so you cannot select both male and female as your gender. To do this we need to set the name="" on all our radio inputs to the same value. See my example below:
+
+        </p>
+     </div>
+     <div class="image">
+      <img src="form10.PNG">
+     </div>
+     <div class="content">
+      <p>Test your radio buttons so only one can be selected at a time. You may notice that the radio buttons and even the checkbox in the last example seem to be out of line with the text. This is a common occurance in HTML and we will learn to fix it with CSS. Let's move onto the next 
+        input type, search!
+      </p>
+     </div>
+
+    <div id="Search" class="content">
+      <h3 class="sub-topic htmlAccent">Search Input Type</h3>
+      <p>The search input type is a fairly straighfoward input. It is commonly used to allow the user to insert a search query. In simpler terms, it is a search bar. In it' most basic form, there will not be any search suggestions but we will learn to add those later. Also, the search
+        input type is often paired with a submit input type so you can actually enter the search query. See the example below:
+
+      </p>
+   </div>
+   <div class="image">
+    <img src="form11.PNG">
+   </div>
+   <div class="content">
+    <p>Be aware that for the time being, the search bar will have no functionality because we have not yet set up our server side form handlers.
+    </p>
+   </div>
+
+   <div id="Number" class="content">
+    <h3 class="sub-topic htmlAccent">Number Input Type</h3>
+    <p>The number input type is another simple input type. Functionally it is the same as the text input type but it only accepts numeric values and does not let you write any letters or symbols. This can be used to extract age, grades, birth year, height, and other quantitative values.
+    </p>
+ </div>
+ <div class="image">
+  <img src="form12.PNG">
+ </div>
+ <div class="content">
+  <p>Be aware that with this current code, people can submit negative values or crazy high values for the age. We will learn to set limits at the end of this unit so only realistic values can be entered.
+  </p>
+ </div>
+
+ <div id="Range" class="content">
+  <h3 class="sub-topic htmlAccent">Range Input Type</h3>
+  <p>The range input type is for allowing the user to select a value from a range of numbers, without knowing the number they selected. In simpler terms, it works like a volume bar. You do not know what the exact value is, but you can roughly tell what it is. We can use this in cases 
+    where the exact value is not needed, for instance, volume. By default, it is set to between 1-100 but we can change this if we need. Also by default the increment is set to 1, we can also change this as you will see at the end of this unit. See the example below:
+
+  </p>
+</div>
+<div class="image">
+<img src="form13.PNG">
+</div>
+<div id="Tel" class="content">
+  <h3 class="sub-topic htmlAccent">Tel Input Type</h3>
+  <p>The tel input type stands for telephone. It is a way for us to retrieve phone numbers in proper phone number format. the tel input type requires a special attribute called 'pattern' that allows us to decide how we want to format our phone number. the most commonly used pattern for 
+    phone numbers is XXX-XXX-XXXX. In our pattern="" attribute we have to write "[0-9]{3}-[0-9]{3}-[0-9]{4}". This looks complicated but it simply says that the first three digits should be 0-9, the next three digits should be 0-9 and the final four digits should be 0-9. See the example below:
+  </p>
+</div>
+<div class="image">
+<img src="form14.PNG">
+</div>
+
+<div id="URL" class="content">
+  <h3 class="sub-topic htmlAccent">URL Input Type</h3>
+  <p>The URL input type works the same as the text input type except that it only accepts URLs. It is a simple input type and does not require much more explanation. You can see a simple example of it below.
+  </p>
+</div>
+<div class="image">
+<img src="form15.PNG">
+</div>
+
+<div  id="FormElements" class="content">
+  <p>That is the end of all the input types in Javascript. Keep in mind the last twenty type="" we learned all belong to the input element. The 'hidden' and 'image' input types are not relevant to us in this current moment and don't need to be covered. Next let's get into form element. HTML has certain form elements that can help us make our form look much better 
+    and more organized. We have already covered the label and input element so it will make it easier for us to move onto the fieldset and legend elements!
+  </p>
+ </div>
+ <div id="FieldsetLegends" class="content">
+  <h3 class="sub-topic htmlAccent">Fieldset & Legends</h3>
+  <p>The fieldset and legend element go hand in hand. We can use them to group relevant inputs together. Let's say a form has a section where it asks for your general information and another that asks for health information. It would not make sense to ask for your name and then immedately ask 
+    for your height so we can make seperate fieldsets for them. Inside of our fieldsets (&lt;fieldset&gt;&lt;/fieldset&gt;), we have the option to set a legend (&lt;legend&gt;&lt;/legend&gt;), which acts like a title for the information. See the example below:
+  </p>
+</div>
+<div class="image">
+<img src="form16.PNG">
+</div>
+<div class="content">
+<p>Now we're talking! The fieldsets can help us make our code much more organized and cleaner by creating a border without using CSS. Make sure you include the legend as the first element in the fieldset if you want to use it. Alternitavely you can decide to not use the legend at all in which case the border will surround the 
+  fieldset element.
+</p>
+</div>
+
+<div id="SelectOptions" class="content">
+  <h3 class="sub-topic htmlAccent">Selects & Options</h3>
+  <p>Selects are another really common form element. They allow you to choose one out of a couple of options, just like the radio buttons. The difference is that they take up less space and does not display all the options on the page. Inside of Select elements (&lt;select&gt;&lt;/select&gt;), we have to add 
+    options (&lt;option&gt;&lt;/option&gt;). An example is shown below.
+  </p>
+</div>
+<div class="image">
+<img src="form17.PNG">
+</div>
+<div class="content">
+<p>You can't see from the picture but upon clicking the select element, a dropdown appears which allows you to choose your gender. This is useful if you have around ten to twenty options, in that case you should use a select over radio buttons.
+</p>
+</div>
+
+<div id="Textareas" class="content">
+  <h3 class="sub-topic htmlAccent">Textareas</h3>
+  <p>Textareas are another really common form element. A lot of forms require a lot of text such as a college application. In the case that we need our users to write multiple sentences, we can use textareas. Textareas (&lt;textarea&gt;&lt;/textarea&gt;) create a box that the user 
+    can type in. The box can be enlarged if the user needs more space to write. Textareas should have a 'rows' attribute and 'cols' attribute which decide how many characters long each row is and how many characters long each column is. See the example below and make your own text area.
+  </p>
+</div>
+<div class="image">
+<img src="form18.PNG">
+</div>
+<div class="content">
+<p>In the above example, the row count is set to three and the column count is set to a hundred so it creates a long text box. Keep in mind that the user can change the size of the text box by simply dragging the widget in the bottom right of the text area. All in all, textareas are 
+  super useful.
+</p>
+</div>
+
+<div id="Datalists" class="content">
+  <h3 class="sub-topic htmlAccent">Datalist</h3>
+  <p>Datalists are similar to selects but instead of forcing the user to pick an option, it simply suggests some options to the user. So if our patient identifies as other and they want to put their gender in, they can write it. For this element we need to create a text input and 
+    apply a list attribute to it. Then we need to create the &lt;datalist&gt;&lt;/datalist&gt; element and fill it with option elements like we did with select. We need to set the 'id' of our datalist to the same thing as our 'list' attribute in our input. See the example below.
+  </p>
+</div>
+<div class="image">
+<img src="form19.PNG">
+</div>
+<div class="content">
+<p>Now clicking into our text input will create a dropdown menu with multiple options that you can choose from if you want. Notice that the user can type anything he wants and is not forced into selecting from the options. Make sure that the 'list' and 'id' attributes are bonded correctly.
+</p>
+</div>
+
+  <div id="FormAttributes" class="content">
+    <h3 class="sub-topic htmlAccent">Form Attributes</h3>
+  <p>That was the final form element. Now before we end the unit off, let's go over some old attributes and learn some new ones that will make our forms more reliable. Right now our users can set their ages to negative numbers and can submit the form while leaving everything blank.
+    Luckily, HTML has many built in attributes so we can get the results we want without our users sending incorrect information to our servers. Let's begin.
+  </p>
+  </div>
+
+  <div id="NameATT" class="content">
+    <h3 class="sub-topic htmlAccent">Name Attribute</h3>
+    <p>The 'name' attribute as we have used many times in this unit simply gives a name value to an element. It is good practice to apply the name attribute to EVERYTHING you can. It helps you understand your own code and helps others understand your code. It is compatible with all form 
+      elements.
+    </p>
+  </div>
+
+  <div id="IdATT" class="content">
+    <h3 class="sub-topic htmlAccent">Id Attribute</h3>
+    <p>Next is the 'ID' Attribute which we have also used many times. We use IDs to link labels and inputs together as well as to link datalists and inputs together. It is recommended you apply the Id attribute to all your form elements as they help us keep our code clean as well as make it 
+      easier to use CSS and Javascript in the future. It is compatible with all form elements.
+    </p>
+  </div>
+
+  <div id="forListATT" class="content">
+    <h3 class="sub-topic htmlAccent">For & List Attributes</h3>
+    <p>The 'for' attribute allows us to link a label to another element. It should really only be used with the label element. The list attribute allows us to link an input to a datalist. It should only be used on the input element.
+    </p>
+  </div>
+
+  <div id="placeholderATT" class="content">
+    <h3 class="sub-topic htmlAccent">Placeholder Attribute</h3>
+    <p>The first new attribute is the placeholder attribute. It allows us to give the user a hint as to what they are supposed to enter. Once the user click on the text box, the placeholder text dissapears and the user can write their own text. 
+      It only works with text boxes so it will only work when the input type is set to text, search, url, tel, email, or password. Make a similar form to the one below and apply the placeholder attribute wherever you can. 
+      Also make sure that the 'for', 'id' and 'name' attributes are defined wherever needed. The 'placeholder' attribute also works with textareas. Add the 'placeholder' attribute to our example, your example should look like this: 
+    </p>
+  </div>
+  <div class="image">
+  <img src="form20.PNG">
+  </div>
+  <div class="content">
+    <p>Our form looks great, but it is important to note that you should not go overboard with your placeholders. Not every single element needs a placeholder so lets remove some of them so the page looks less messy. It is common sense that the age, height and weight answers can 
+      only be within a certain range so we can remove those placeholders. Also we do not need to add a placeholder for the password.
+    </p>
+  </div>
+
+  <div id="requiredATT" class="content">
+    <h3 class="sub-topic htmlAccent">Required Attribute</h3>
+    <p>Earlier we had the issue that people could submit the webpage without filling out all the information. By adding the 'required' attribute to our elements, we can make it so the user cannot submit the form until all the required information is filled out. The 'required' attribute 
+      is a boolean attribute meaning that is is true or false. Any element is either required or not required. By default every element is not required so if we want to require it, all we have to do is put the word 'required' inside of our element tags. No ="" is necessary here. If a value is 
+      not required, we do not have to do anything to our element. It is compatible with text, search, url, tel, email, password, number, checkbox, radio, file and all time input types. It also works with textareas, datalists and select elements. Let's add the required attribute to all our elements since all the information is required.
+    </p>
+  </div>
+  <div class="image">
+  <img src="form21.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, if we try to submit a blank value, HTML has it's own error message. Of course we can custom make our own error message but the default HTML one does the job. Now that solves the problem of users submitting blank inputs.
+    </p>
+  </div>
+
+  <div id="valueATT" class="content">
+    <h3 class="sub-topic htmlAccent">Value Attribute</h3>
+    <p>The 'value' attribute works similar to the placeholder attribute but the content acts as if the user has input it. When we use a placeholder, the text inside dissapears. By setting the value attribute, instead of dissapearing, the text is actually there. Usually the user has to 
+      erase the text to put their own text in so It is not reccomended. For the "reset" and "submit" input types it defines the text on the button. For text inputs it defines the initial value of the input field. For "checkbox" and "radio" it defines the value associated with the input (setting
+      the value on our checkbox or radio buttons will send that value to our server so every checkbox and radio should have a value).
+    </p>
+  </div>
+  <div class="image">
+  <img src="form21.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, if we try to submit a blank value, HTML has it's own error message. Of course we can make our own custom error message but the default HTML one does the job. Now that solves the problem of users submitting blank inputs.
+    </p>
+  </div>
+
+  <div id="disabledATT" class="content">
+    <h3 class="sub-topic htmlAccent">Disabled Attribute</h3>
+    <p>The 'disabled' attribute makes it so we cannot interact with the element. Similar to the required attribute, the disabled attribute is a boolean attribute meaning that an element is either disabled or enabled. By default they are enabled.
+       It can be used on all form elements and all input types. Let's say that for whatever reason Dr. Shah is the only doctor accepting appointments. In that case, it would make sense to set the 'value' attribute 
+      to Dr. Shah and then disable it so it cannot be changed. Let's add the 'disabled' attribute to our code.
+    </p>
+  </div>
+  <div class="image">
+  <img src="form22.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the box with the Dr's name is now faded out. We cannot interact with it in any way because he is the only doctor taking appointments. Make sure you remove the required attribute when adding the disabled attribute. All in all the disabled attribute is a smart 
+      way to force a user into picking only one option. Be aware that when we use the 'disabled' attribute, nothing is sent to our server side. If we want to send Dr. Shah's name to the server side, which we do, we must use a different attribute.
+    </p>
+  </div>
+
+  <div id="readonlyATT" class="content">
+    <h3 class="sub-topic htmlAccent">Readonly Attribute</h3>
+    <p>The 'readonly' attribute makes it so we cannot change the content of a text input but we can interact with it (copy/highlight/read it). It is similar to the 'disabled' attribute and generally is more preferred because it sends the element to the server whereas the disabled attribute 
+      does not. Again, the readonly attribute is boolean so an element is either read only or not read only. Let's replace the 'disabled' attribute with the 'readonly' attribute in our example.
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form23.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the box with the Dr's name is not faded anymore and looks as if we wrote it ourselves. Upon testing you will see that it is clickable but we cannot change the actual content. 
+    </p>
+  </div>
+
+  <div id="autocompleteATT" class="content">
+    <h3 class="sub-topic htmlAccent">Autocomplete Attribute</h3>
+    <p>Let's make forms more quick and convienient for our users by using autocomplete. Let's say that our user has signed up on some other website and has reached our form. By setting autocomplete="on" inside of our opening form tag, the user can automatically fill 
+      in the information using previous form entries from other sites. This attribute only works on the form element. Here is an example: 
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form25.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the text that has been filled using autocomplete has a light blue background. On most browsers autocomplete is set to on by default but we should always set it as best practice.
+    </p>
+  </div>
+
+  <div id="novalidateATT" class="content">
+    <h3 class="sub-topic htmlAccent">Novalidate Attribute</h3>
+    <p>The Novalidate attribute makes it so the form is not validated when submitted. This means that even if an input is set to required, the browser won't validate it. Generally you would never use this attribute as it has little practical use. It is a boolean attribute and 
+      we are not going to use it in our code.
+    </p> 
+  </div>
+
+  <div id="sizeATT" class="content">
+    <h3 class="sub-topic htmlAccent">Size Attribute</h3>
+    <p>The Size attribute sets the size of the visible text box. The default value is 20 so we do not need to specify it in most instances as most names, and passwords comfortably fit. Let's use the size attribute on our email input type and set it to 30 since some emails are longer than 20 characters.
+       It is only compatible with text, search, url, tel, email, or password input types as well as select elements. Your program should look like this:  
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form24.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the email box got wider and more characters can be sent to our server to get the information we need. However, our users can still input an unlimited amount of characters. Let's fix that.
+    </p>
+  </div>
+
+  <div id="maxlenghtATT" class="content">
+    <h3 class="sub-topic htmlAccent">Maxlength Attribute</h3>
+    <p>The Maxlength attributes sets the max number of characters that can be sent to the server per input. For example, if we set the maxlength to 3, we can only type 3 characters. It is compatible with 
+      text, search, url, tel, email, or password input types as well as textarea elements. These can be very useful for setting max character counts on textareas. Let's add it to our first and last name inputs and set it to 20:
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form26.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the max characters you can input is 20. A lot of people get confused between size and maxlength. Size decides how long the text box is whereas maxlength decides the max number of characters that fit inside of the text box. But this is only for text values, how 
+      do we make sure our users are limited with numbers and dates?
+    </p>
+  </div>
+
+  <div id="maxMinATT" class="content">
+    <h3 class="sub-topic htmlAccent">Max & Min Attributes</h3>
+    <p>Using the max and min attribute, we can make it so our users submit only sensible numbers and dates. simply set the max="" and min="" to the range. It is compatible with number, range, date, datetime-local, month, time and week input types. For example for age, we would set max="120" and min="0". Set the max and min attributes on our age, height and weight inputs. 
+      Also add a birthday input and restrict it using max and min. An example is shown below:
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form27.PNG">
+  </div>
+  <div class="content">
+    <p>Much better, no more negative values and no more obscenely high values. Also the birthdate must be between 1900 and 2023, any other option is unclickable. Now our data will be much more relaible and consistant.
+    </p>
+  </div>
+
+  <div id="multipleATT" class="content">
+    <h3 class="sub-topic htmlAccent">Multiple Attribute</h3>
+    <p>The multiple attribute is a simple boolean that allows you to submit multiple different values for a single input. It is only compatible with the email and file input types. It is not a very commonly used attribute.
+    </p> 
+  </div>
+
+  <div id="maxMinATT" class="content">
+    <h3 class="sub-topic htmlAccent">Max & Min Attributes</h3>
+    <p>Using the max and min attribute, we can make it so our users submit only sensible numbers and dates. simply set the max="" and min="" to the range. It is compatible with number, range, date, datetime-local, month, time and week input types. For example for age, we would set max="120" and min="0". Set the max and min attributes on our age, height and weight inputs. 
+      Also add a birthday input and restrict it using max and min. An example is shown below:
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form27.PNG">
+  </div>
+  <div class="content">
+    <p>Much better, no more negative values and no more obscenely high values. Also the birthdate must be between 1900 and 2023, any other option is unclickable. Now our data will be much more relaible and consistant.
+    </p>
+  </div>
+
+  <div id="patternATT" class="content">
+    <h3 class="sub-topic htmlAccent">Pattern Attribute</h3>
+    <p>The pattern attribute as we discussed early allows us to set how the user input should be format. We must write either [0-9] (This stand for any number) or [A-Za-z] (Which stands for any alphabet) followed by {} with a number inside denoting how long the rule should be. For example, 
+      if pattern="[A-Za-z]{5}[0-9]{3}" then we must enter 5 letters followed by 3 numbers. Additionally if we want to restrict the user to upper case we can use only [A-Z] and for lowercase, only [a-z].The pattern attribute is compatible with the text, tel, email, url, password, and search input types.
+      Add a new input for a phone number. Add a placeholder so our users know what the pattern is like. Your example should look like this:
+
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form28.PNG">
+  </div>
+  <div class="content">
+    <p>Perfect now the user knows what they must enter and now they must submit a value in the format of a number. Remember, if you use a pattern, you must set a placeholder or add some other text to let the user know what the pattern is or else they will not know what they must submit.
+    </p>
+  </div>
+
+  <div id="stepATT" class="content">
+    <h3 class="sub-topic htmlAccent">Step Attribute</h3>
+    <p>The step attribute is an attribute that allows us to set an increment to a number, date or range input type. For example, let's say we want our users to enter the approximate amount of months that have passed since their last appointment and want to make it so the values they 
+      submit are multiples of three (ie. 3 months, 6 months, 9 months, 12 months, etc.), we can set step="3" and our users will be forced to set their answer to a multiple of three. It is used with the date, month, week, time, datetime-local, number and range types. It is uncommon 
+      with time input types though. Make a similar example on your site and make sure to use the max and min attribute, mine is below: 
+    </p> 
+  </div>
+  <div class="image">
+  <img src="form29.PNG">
+  </div>
+  <div class="content">
+    <p>As you can see, the user is alerted if the number they give is not a multiple of three. This is very useful because it can limit the values that our server recieves, so instead of 72 possible values, we only have 24 possible value. Keep in mind that we must use the max and min 
+      attributes so the user cannot submit -3, -6, -12, etc. Even negative multiples count so we must set max and min. Max and Min, combined with the Step attribute can really be super powerful.
+    </p>
+  </div>
+
+  <div id="autofocusATT" class="content">
+    <h3 class="sub-topic htmlAccent">Autofocus Attribute</h3>
+    <p>The autofocus attribute decides which element is active on page load. Usually, you attach the autofocus attribute on the first input on the form so when the user loads the form, they can type into the first input element without having to click it. It works on all inputs, but in most cases, 
+      it is used with a textbox. Add the autofocus attribute to the first input on your form.
+    </p> 
+  </div>
+  <div class="content">
+    <p>It is critical that you only have one autofocus attribute per form. If you have more than one, then the element that is earliest in the HTML file will have autofocus and the rest will not. Only use autofocus on the first element. 
+    </p>
+  </div>
+
+  <div class="content">
+    <p>We have arrived at the end of HTML Forms. HTML Forms are without a doubt one of the more difficult units in html but it gets much easier with time and practice. Refer back to this page anytime you need. Let's move onto an easier topic in the next unit, HTML Text modifiers. 
+    </p>
+  </div>
+
+  </div>
+</div>
+</body>
+</html> 
