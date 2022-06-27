@@ -113,6 +113,9 @@
               <li><a href="#CodeTT">Code & TT Elements</a></li>
               <li><a href="#Blockquotes">Blockquote Element</a></li>
               <li><a href="#Pre">Pre Element</a></li>
+              <li><a href="#Mark">Mark Element</a></li>
+              <li><a href="#Address">Address Element</a></li>
+              <li><a href="#bdo">Bdo Element</a></li>
               <li><a href="#Center">Center Element</a></li>
               <li><a href="#BigSmall">Big & Small Elements</a></li>
               <li><a href="#FontElement">Font Element</a></li>
@@ -154,20 +157,22 @@ that we put the bold/strong elements inside of the paragraph element and not out
 <div id="EmphasisItalic" class="content">
   <h3 class="sub-topic htmlAccent">Emphasis & Italic Elements</h3>
   <p>In HTML, we have two ways to italicize text that yield the same result. The italic (&lt;i&gt;&lt;/i&gt;) and emphasis (&lt;em&gt;&lt;/em&gt;) element are the two ways. The italic element is usually used to denote text that is unusual such as a different language as well as references such as a book name. The emphasis element is used to 
-    stress importance and emphasize a word or phrase in a sentence. The emphasis element is semantic, meaning when we see the em tag, we know the text inside is important, whereas with the italic element, it could simply be a book title. So whenever you can use the  emphasis element over the italic element, you should. These two work similar to the Bold & Strong element.
+    stress importance and emphasize a word or phrase in a sentence. The emphasis element is semantic, meaning when we see the em tag, we know the text inside is important, whereas with the italic element, it could simply be a book title. Speaking of book titles, whenever we are referencing an artistical work, it is best to use the cite element 
+    (&lt;em&gt;&lt;/em&gt;), which is exactly the same as the italic element but it is semantic. So whenever you can a semantic element, you should. Here is an example of the italic and emphasis elements:
    </p>
 </div>
 <div class="image">
   <img src="mods2.PNG">
-</div>
+</div>)
 <div class="content">
 <p>As you can see, the result is exactly the same. Again, be sure to use the semantic element whenever possible. Let's move onto the next modifier.
 </p>
 </div>
 
 <div id="Underline" class="content">
-  <h3 class="sub-topic htmlAccent">Underline Element</h3>
-  <p>The Underline element (&lt;u&gt;&lt;/u&gt;) simply underlines the text. It is used to stress importance. However, it is key to know that when using an anchor tag, the underline property is added automatically. See the example below: 
+  <h3 class="sub-topic htmlAccent">Underline & Ins Elements</h3>
+  <p>The Underline element (&lt;u&gt;&lt;/u&gt;) simply underlines the text. It is used to stress importance. However, it is key to know that when using an anchor tag, the underline property is added automatically. The Ins element (&lt;ins&gt;&lt;/ins&gt;) is functionally the same as the underline element but it is semantic.
+    It indicates that text has been inserted. Regardless, the underline element is much more common, see the example below: 
 </div>
 <div class="image">
   <img src="mods3.PNG">
@@ -178,9 +183,9 @@ that we put the bold/strong elements inside of the paragraph element and not out
 </div>
 
 <div id="Strikeout" class="content">
-  <h3 class="sub-topic htmlAccent">Strikeout Element</h3>
-  <p>The Strikeout element (&lt;strike&gt;&lt;/strike&gt; or &lt;s&gt;&lt;/s&gt;) adds a line through the center of text. It is used to denote that something is old/defunct/out of order or that something has been canceled. There is no difference between using strike or s. The s element is simply an abbreviation. Personally, I would 
-    use the short s. Please note that both can be interchanged. Here is an example of both versions in play:
+  <h3 class="sub-topic htmlAccent">Strikeout & Del Elementa</h3>
+  <p>The Strikeout element (&lt;strike&gt;&lt;/strike&gt; or &lt;s&gt;&lt;/s&gt; or &lt;del&gt;&lt;/del&gt;) adds a line through the center of text. strike or s is used to denote that something is old/defunct/out of order or that something has been canceled. There is no difference between using strike or s. The s element is simply an abbreviation. Personally, I would 
+    use the short s. Please note that both can be interchanged. However, the del element, although functionally the same, is semantically different and denotes something that has been removed. Here is an example of them in play:
   </div>
 <div class="image">
   <img src="mods4.PNG">
@@ -238,6 +243,32 @@ that we put the bold/strong elements inside of the paragraph element and not out
 <div class="content">
 <p>As you can see, by using the pre element, we can keep the structure that is in our HTML file. Also notice that the font of the text is similar to the Code/TT Font. This is because most of the time we use the pre element, we are showing source code, so it makes sense to have this 'codey' text.
 </p>
+</div>
+
+<div id="Mark" class="content">
+  <h3 class="sub-topic htmlAccent">Mark Element</h3>
+  <p>The mark element (&lt;mark&gt;&lt;/mark&gt;) allows us to highlight text. It simply adds a bright yellow background to text which stresses importance. They can be used anywhere to indicate many things. Here is an example: 
+  </div>
+<div class="image">
+  <img src="mods12.PNG">
+</div>
+
+<div id="Address" class="content">
+  <h3 class="sub-topic htmlAccent">Address Element</h3>
+  <p>The address element (&lt;address&gt;&lt;/address&gt;) is used to give an address, usually at the end of a news article or webpage. It automatically creates a linebreak above it and italicizes the text inside. It is also semantic so it helps us make our code more readable by telling us that it is an address. Here 
+    is an example:
+  </div>
+<div class="image">
+  <img src="mods13.PNG">
+</div>
+
+<div id="bdo" class="content">
+  <h3 class="sub-topic htmlAccent">Bdo Element</h3>
+  <p>The bdo element (&lt;bdo&gt;&lt;/bdo&gt;), which stands for Bi-directional overide, simply allows you to choose which direction your text should be in. It has a 'dir' attribute which stands for direction and has to possible option. ltr (left to right) or rtl (right to left). By default, it is set to ltf, which is how most text is read. 
+    However, some languages such as arabic are read right to left so the bdo element needs to be used. Besides this, the bdo element does not have much other use, it just looks funny when used on normal text: 
+  </div>
+<div class="image">
+  <img src="mods14.PNG">
 </div>
 
 <div class="content">
